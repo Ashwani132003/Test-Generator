@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: skyblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    max-width: 100%;
+    max-height: 30%;
+    border-radius: 2px;
+    background-color: greenyellow;
+}
+
+.menu a {
+    text-align: right;
+    text-decoration: none;
+    padding: 3px 80px 5px 40px;
+    color: blueviolet;
+}
+
+.main {
+    width: 950px;
+    height: 680px;
+    max-height: 50%;
+    max-width: 75%;
+    border-radius: 7px;
+    background-color: wheat;
+    padding: 12px;
+    box-shadow: 0 0 10px 2px;
+}
+
+.Question h1 {
+    top: 0;
+    padding-left: 24px;
+    position: relative;
+    font-size: 20px;
+}
+
+.Question textarea {
+    margin-top: 4px;
+    margin-left: 24px;
+    font-size: 34px;
+    color: black;
+    background-color: aliceblue;
+    width: 770px;
+    height: 170px;
+    box-shadow: 0 0 8px 2px;
+}
+
+#option-button {
+    padding: 25px 26px 25px 4px;
+}
+
+.option {
+    width: 80px;
+    height: 30px;
+    margin-left: 22px;
+    box-sizing: content-box;
+    border-radius: 3px;
+    box-shadow: 0 0 0.3px 0.3px;
+    background-color: yellow;
+}
+
+#buttons {
+    padding: 10px 16px 10px 20px;
+    size: 25px;
+}
+
+.previous-btn {
+    border-radius: 3px;
+    margin-right: 20px;
+    margin-left: 6px;
+    width: 100px;
+    height: 40px;
+    background-color: aqua;
+}
+
+.next-btn {
+    margin-left: 7px;
+    margin-right: 20px;
+    border-radius: 3px;
+    width: 100px;
+    height: 40px;
+    background-color: aqua;
+}
+
+.uncheck-btn {
+    width: 100px;
+    height: 40px;
+    margin-left: 300px;
+    margin-right: 20px;
+    border-radius: 3px;
+    background-color: lightblue;
+}
+
+.save-btn {
+    width: 100px;
+    height: 40px;
+    border-radius: 3px;
+    margin-left: 7px;
+    margin-right: 20px;
+    background-color: lightblue;
+}
