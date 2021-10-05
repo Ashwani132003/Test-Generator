@@ -46,6 +46,8 @@ body {
 
 a:hover{
     text-decoration: underline;
+    /* color: rgb(221, 18, 160); */
+    color: rgb(230, 76, 59);
 }
 
 .main {
@@ -89,6 +91,7 @@ a:hover{
     border-radius: 3px;
     box-shadow: 0 0 0.3px 0.3px;
     background-color: yellow;
+    cursor: pointer;
 }
 
 #buttons {
@@ -102,16 +105,20 @@ a:hover{
     margin-left: 6px;
     width: 100px;
     height: 40px;
-    background-color: aqua;
+    background-color:rgb(238, 39, 172);
 }
 
+.previous-btn:hover,.next-btn:hover{
+    background-color: rgb(175, 2, 117);
+    color: papayawhip;
+}
 .next-btn {
     margin-left: 7px;
     margin-right: 20px;
     border-radius: 3px;
     width: 100px;
     height: 40px;
-    background-color: aqua;
+    background-color:rgb(238, 39, 172);
 }
 
 .uncheck-btn {
@@ -120,7 +127,7 @@ a:hover{
     margin-left: 300px;
     margin-right: 20px;
     border-radius: 3px;
-    background-color: lightblue;
+    background-color: rgb(21, 187, 243);
 }
 
 .save-btn {
@@ -129,5 +136,13 @@ a:hover{
     border-radius: 3px;
     margin-left: 7px;
     margin-right: 20px;
-    background-color: lightblue;
+    background-color: rgb(21, 187, 243);
+}
+
+.uncheck-btn:hover,.save-btn:hover{
+    background-color:rgb(3, 136, 180);
+    color: rgb(253, 170, 235);
+}
+#btn{
+    cursor: pointer;
 }
