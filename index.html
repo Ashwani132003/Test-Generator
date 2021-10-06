@@ -6,39 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Generator</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
     <script src="script.js"></script>
 
 </head>
 
 <body>
-    <div class="menu">
-        <a href="home.html"><b>Home</b></a>
-        <a href="add.html"><b>Edit</b></a>
-    </div>
+    <nav>
+        <div class="menu">
+            <a href="home.html"><b>Home</b></a>
+            <a href="add.html"><b>Edit</b></a>
+        </div>
+    </nav>
     <div class="main">
 
-        <div id="container" class="hide">
+        <div class="hide container">
 
-            <div class="Question">
+            <div class="question">
                 <h1><b>Question:</b></h1>
                 <textarea rows="2" cols="2" placeholder="Type your question here. "></textarea>
             </div>
 
-            <div id="option-button" class="button-grid">
-                <button onclick="chck()" class="option" style="font-size : 18px;">Option 1</button>
-                <button onclick="chck()" class="option" style="font-size : 18px;">Option 2</button>
-                <button onclick="chck()" class="option" style="font-size : 18px;">Option 3</button>
-                <button onclick="chck()" class="option" style="font-size : 18px;">Option 4</button>
+            <div class="button-grid">
+                <button onclick="chck()" class="option">Option 2</button>
+                <button onclick="chck()" class="option">Option 1</button>
+                <button onclick="chck()" class="option">Option 3</button>
+                <button onclick="chck()" class="option">Option 4</button>
             </div>
         </div>
 
         <div class="tools">
             <div id="buttons">
 
-                <button id="btn" class="previous-btn"><b>Previous</button>
-                <button id="btn" class="next-btn"><b>Next</button>
-                <button id="btn" class="uncheck-btn"><b>Uncheck</button>
-                <button id="btn" class="save-btn"><b>Save</button>
+                <button id="btn" class="tool-btn previous-btn"><b>Previous</button>
+                <button id="btn" class="tool-btn next-btn"><b>Next</button>
+                <button id="btn" class="tool-btn uncheck-btn"><b>Uncheck</button>
+                <button id="btn" class="tool-btn save-btn"><b>Save</button>
             </div>
         </div>
     </div>

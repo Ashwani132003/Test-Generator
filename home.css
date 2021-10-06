@@ -40,7 +40,6 @@ body {
     margin: 50px 20px;
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
     align-items: center;
     padding: 40px;
     justify-content: middle;
