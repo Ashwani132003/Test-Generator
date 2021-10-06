@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Generator</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 
 </head>
 
@@ -22,17 +21,24 @@
         <div id="container" class="hide">
 
             <div class="Question">
-                <h1><b>Question:</b></h1>
-                <textarea rows="2" cols="2" placeholder="Type your question here. "></textarea>
+                <h1><b>Question:</b><span class="question-number">1</span></h1>
+                <textarea class="get-input-question" value="" rows="2" cols="2" placeholder="Type your question here. "></textarea>
             </div>
 
             <div id="option-button" class="button-grid">
-                <button onclick="chck()" class="option" style="font-size : 18px;">Option 1</button>
-                <button onclick="chck()" class="option" style="font-size : 18px;">Option 2</button>
-                <button onclick="chck()" class="option" style="font-size : 18px;">Option 3</button>
-                <button onclick="chck()" class="option" style="font-size : 18px;">Option 4</button>
+                <button onclick="chck('option_1')" class="option option_1 option-active" style="font-size : 18px;">Option 1</button>
+                <button onclick="chck('option_2')" class="option option_2" style="font-size : 18px;">Option 2</button>
+                <button onclick="chck('option_3')" class="option option_3" style="font-size : 18px;">Option 3</button>
+                <button onclick="chck('option_4')" class="option option_4" style="font-size : 18px;">Option 4</button>
             </div>
         </div>
+
+
+            <div class="Option">
+                <h1><b>Option:<span class="option-number">1</span></b></h1>
+                <textarea class="get-input-option" value="" rows="2" cols="2" placeholder="Type your option here. "></textarea>
+            </div>
+
 
         <div class="tools">
             <div id="buttons">
@@ -44,7 +50,7 @@
             </div>
         </div>
     </main>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
