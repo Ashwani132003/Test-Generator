@@ -8,38 +8,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Generator</title>
     <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
 
 </head>
 
 
 <body>
-    <div id="welcome"><b>Test Generator</b></div>
-    <div class="home">
-
-        <div class="middle">
-            <div id="text"><b>Click on Start button to create test.</div>
-        </div>
-        
-            <div class="start-btn" style="font-size:30px;"><a href="index.html">Start</a></div>
-        
-        <div class="about">
-        <h2>About Test Generator</h2>
-        <h1>Create Your First Test</h1>
-        <p style="font-size: 28px;font-family:Helvetica;">We provide you free platform to create as much tests you want at no cost, feel free to generate and share it .</p>
+    <div class="container">
+        <div class="welcome">
+            <h1>Test Generator</h1>
         </div>
 
-        <div class="instruction">
-            <div id="contact">Contact us</div>
-            <div id="name"><input type="text" placeholder="Name"   ></div>
-            <input id="email" type="email" placeholder="Your Email">
-            <input type="text" id="text" placeholder="Subject">
-            <textarea id="message" placeholder="Your message" rows="4" cols="22"></textarea>
-            <button id="send">Send</button>
-            
+        <div class="home">
+
+            <div class="middle">
+                <div class="text"><b>Click on Start button to create test.</div>
+                <div class="start-btn"><a href="index.html">Start</a></div>
+            </div>
+
+
+            <div class="about">
+                <h2>About Test Generator</h2>
+                <h1>Create Your First Test</h1>
+                <p>We provide you free platform to create as much tests
+                    you
+                    want at no cost, feel free to generate and share it .</p>
+            </div>
+
+            <div class="contact">
+                <div class="instruction">
+                    <div id="contact">Contact us</div>
+                    <div id="name"><input type="text" placeholder="Name"></div>
+                    <input id="email" type="email" placeholder="Your Email">
+                    <input type="text" id="text" placeholder="Subject">
+                    <textarea id="message" placeholder="Your message" rows="4" cols="22"></textarea>
+                    <button id="send">Send</button>
+
+                </div>
+                <div class="status" class="success">Message sent successfully!!</div>
+            </div>
         </div>
-        <div id="status" class="success">Message sent successfully!!</div>
     </div>
-
 </body>
 
 </html>
