@@ -25,14 +25,15 @@ function chck(className) {
 }
 
 
+
 document.querySelector(".get-input-option").addEventListener("input",()=>{
     const question_number = document.querySelector(".question-number").innerHTML
     const option_number = document.querySelector(".option-number").innerHTML
-    const optionRef = questions[`question_${question_number}`][`option_${option_number}`]
-    optionRef = document.querySelector(".get-input-option").value
+    questions[`question_${question_number}`][`option_${option_number}`] += document.querySelector(".get-input-option").value
+
+    console.log(questions)
 })
 document.querySelector(".get-input-question").addEventListener("input",()=>{
     const question_number = document.querySelector(".question-number").innerHTML
-    const questionRef = questions[`question_${question_number}`].question
-    questionRef = document.querySelector(".get-input-question").value
+    questions[`question_${question_number}`].question = document.querySelector(".get-input-question").value
 })
