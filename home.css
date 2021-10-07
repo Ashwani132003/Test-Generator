@@ -168,7 +168,7 @@ textarea {
     text-align: center;
 }
 
-.status.success {
+.success {
     background-color: #ee7752;
     color: wheat;
     animation: status 4s ease forwards;
