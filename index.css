@@ -188,6 +188,11 @@ textarea {
     }
 }
 @media (max-width: 1459px) {
+    
+    .Resp {
+        width: 70%;
+        
+    }
  
   }
   
