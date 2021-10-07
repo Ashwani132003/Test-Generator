@@ -109,10 +109,20 @@ document
     .addEventListener("click", saveQuestionsHandler);
 
 function onInit() {
-    questions = JSON.parse(localStorage.getItem("questions"));
-    document.querySelector(".get-input-question").value =
+    const localQuestions = JSON.parse(localStorage.getItem("questions"));
+    if(localQuestions){
+        questions=localQuestions
+        document.querySelector(".get-input-question").value =
         questions.question_1.question;
-    document.querySelector(".get-input-option").value =
+        document.querySelector(".get-input-option").value =
         questions.question_1.option_1;
+
+    } else {
+        document.querySelector(".get-input-question").value =
+        questions.question_1.question;
+        document.querySelector(".get-input-option").value =
+        questions.question_1.option_1;
+    }
+
 }
 onInit()
