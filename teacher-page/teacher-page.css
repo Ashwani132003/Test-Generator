@@ -35,9 +35,14 @@ body {
     width: 100%;
     background-color: greenyellow;
     padding: 2rem;
+    text-align:right;
 }
 
+
 .menu a {
+    
+    display: inline;
+    position:relative;
     text-decoration: none;
     color: blueviolet;
     margin-left: 4rem;
@@ -89,11 +94,11 @@ a:hover{
 .Option textarea {
     margin-top: 4px;
     margin-left: 24px;
+    margin-bottom: 20px;
     font-size: 34px;
     color: black;
     background-color: aliceblue;
-    width: 90%;
-    height: 170px;
+    
     box-shadow: 0 0 8px 2px;
 }
 
