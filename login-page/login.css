@@ -14,16 +14,28 @@ html,body{
 , #fc3cfc);
 }
 .menu {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    display: flex;
-    max-width: 100%;
-    max-height: 30%;
-    border-radius: 2px;
-    justify-content: space-evenly;
-    background-color: greenyellow;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      background-color: greenyellow;
+      padding: 2rem;
+      text-align:right;
+}
+
+.menu a {
+    display: inline;
+    position:relative;
+    text-decoration: none;
+    color: blueviolet;
+    margin-left: 5rem;
+    font-size: 1.5rem;
+}
+
+a:hover{
+    text-decoration: underline;
+    /* color: rgb(221, 18, 160); */
+    color: rgb(230, 76, 59);
 }
 
 ::selection{
