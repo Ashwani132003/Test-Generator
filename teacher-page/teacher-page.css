@@ -1,180 +1,198 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: skyblue;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
-    padding: 0;
-    margin: 0;
-    animation: gradient 15s ease infinite;
+  background-color: rgb(33, 34, 34);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  animation: gradient 15s ease infinite;
+  overflow-x: hidden;
 }
 
 @keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .menu {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    background-color: greenyellow;
-    padding: 2rem;
-    text-align:right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  /* background-color: greenyellow; */
+  padding: 2rem;
+  text-align: center;
 }
-
 
 .menu a {
-    
-    display: inline;
-    position:relative;
-    text-decoration: none;
-    color: blueviolet;
-    margin-left: 4rem;
-    font-size: 1.5rem;
+  display: inline;
+  position: relative;
+  text-decoration: none;
+  /* color: blueviolet; */
+  color: white;
+  margin-left: 4rem;
+  font-size: 1.5rem;
 }
 
-a:hover{
-    text-decoration: underline;
-    /* color: rgb(221, 18, 160); */
-    color: rgb(230, 76, 59);
+a:hover {
+  text-decoration: underline;
+  /* color: rgb(221, 18, 160); */
+  color: white;
 }
 
 .main {
-    margin-top: 300px;
-    width: 950px;
-    height: 600px;
-    max-width: 75%;
-    border-radius: 7px;
-    background-color: wheat;
-    padding: 12px;
-    box-shadow: 0 0 10px 2px;
+  margin-top: 7%;
+  margin-bottom: 5%;
+  width: 950px;
+  height: 600px;
+  max-width: 75%;
+  border-radius: 7px;
+  /* background-color: ; */
+  background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+  padding: 12px;
+  box-shadow: 0 0 10px 2px;
 }
 
 .Question h1 {
-    top: 0;
-    padding-left: 24px;
-    position: relative;
-    font-size: 20px;
+  top: 0;
+  padding-left: 24px;
+  position: relative;
+  font-size: 20px;
 }
 
 .Question textarea {
-    margin-top: 4px;
-    margin-left: 24px;
-    font-size: 34px;
-    color: black;
-    background-color: aliceblue;
-    width: 90%;
-    height: 170px;
-    box-shadow: 0 0 8px 2px;
+  margin-top: 4px;
+  margin-left: 24px;
+  font-size: 1.5rem;
+  color: black;
+  background-color: aliceblue;
+  width: 90%;
+  height: 170px;
+  border: none;
 }
 
 .Option h1 {
-    top: 0;
-    padding-left: 24px;
-    position: relative;
-    font-size: 20px;
+  top: 0;
+  padding-left: 24px;
+  position: relative;
+  font-size: 20px;
 }
 
 .Option textarea {
-    margin-top: 4px;
-    margin-left: 24px;
-    margin-bottom: 20px;
-    font-size: 34px;
-    color: black;
-    background-color: aliceblue;
-    
-    box-shadow: 0 0 8px 2px;
+  margin-top: 4px;
+  margin-left: 24px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: black;
+  background-color: aliceblue;
 }
 
 #option-button {
-    padding: 25px 26px 25px 4px;
+  padding: 25px 26px 25px 4px;
 }
 
 .option {
-    width: 80px;
-    height: 30px;
-    margin-left: 22px;
-    box-sizing: content-box;
-    border-radius: 3px;
-    box-shadow: 0 0 0.3px 0.3px;
-    background-color: yellow;
-    cursor: pointer;
+  width: 80px;
+  height: 30px;
+  margin-left: 22px;
+  box-sizing: content-box;
+  border-radius: 3px;
+  box-shadow: 0 0 0.3px 0.3px;
+  /* background-color: yellow; */
+  background-color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
 }
 
 .option-active {
-    background-color: blue;
-    color: white;
+  background-color: black;
+  color: white;
 }
 
 #buttons {
-    padding: 10px 16px 10px 20px;
-    size: 25px;
+  padding: 10px 16px 10px 20px;
+  size: 25px;
 }
 
 .previous-btn {
-    border-radius: 3px;
-    margin-right: 20px;
-    margin-left: 6px;
-    width: 100px;
-    height: 40px;
-    background-color:rgb(238, 39, 172);
+  border-radius: 3px;
+  margin-right: 20px;
+  margin-left: 6px;
+  width: 100px;
+  height: 40px;
+  /* background-color: rgb(238, 39, 172); */
+  background: black;
+  color: white;
+  border-radius: 20px;
+  border: 2px solid black;
 }
 
-.previous-btn:hover,.next-btn:hover{
-    background-color: rgb(175, 2, 117);
-    color: papayawhip;
+.previous-btn:hover,
+.next-btn:hover {
+  background: white;
+  color: black;
 }
 .next-btn {
-    margin-left: 7px;
-    margin-right: 20px;
-    border-radius: 3px;
-    width: 100px;
-    height: 40px;
-    background-color:rgb(238, 39, 172);
+  margin-left: 7px;
+  margin-right: 20px;
+  border-radius: 3px;
+  width: 100px;
+  height: 40px;
+  color: white;
+  border-radius: 20px;
+  border: 2px solid black;
+  background: black;
 }
 
 .uncheck-btn {
-    width: 100px;
-    height: 40px;
-    margin-left: 300px;
-    margin-right: 20px;
-    border-radius: 3px;
-    background-color: rgb(21, 187, 243);
+  width: 100px;
+  height: 40px;
+  margin-left: 300px;
+  margin-right: 20px;
+  border-radius: 3px;
+  color: white;
+  border-radius: 20px;
+  border: 2px solid black;
+  background: black;
 }
 
 .save-btn {
-    width: 100px;
-    height: 40px;
-    border-radius: 3px;
-    margin-left: 7px;
-    margin-right: 20px;
-    background-color: rgb(21, 187, 243);
+  width: 100px;
+  height: 40px;
+  border-radius: 3px;
+  margin-left: 7px;
+  margin-right: 20px;
+  color: white;
+  border-radius: 20px;
+  border: 2px solid black;
+  background: black;
 }
 
-.uncheck-btn:hover,.save-btn:hover{
-    background-color:rgb(3, 136, 180);
-    color: rgb(253, 170, 235);
+.uncheck-btn:hover,
+.save-btn:hover {
+  background: white;
+  color: black;
 }
-#btn{
-    cursor: pointer;
+#btn {
+  cursor: pointer;
 }
 
-.container{
-    background-color: bisque;
+.container {
+  background-color: bisque;
 }
